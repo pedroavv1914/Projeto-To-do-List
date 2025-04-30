@@ -71,15 +71,72 @@ body{
 
 img {
     height: 25px;
-    opacity: 0;
     transition: .3s ease-in-out;
-}
-
-.task:hover img{
-    opacity: 1;
 }
 
 .done {
     background-color: #8fac55;
     text-decoration: line-through;
 }
+
+.edit-input {
+    text-align: center;
+    background-color: #d1d1d1;
+    border: none;
+    font-size: 17px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+        margin: 40px auto 0;
+    }
+
+    .input-task {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .button-add-task {
+        width: 100%;
+        float: none;
+    }
+
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    .task p {
+        margin: 10px 0;
+        word-break: break-word;
+    }
+
+    .edit-input{
+        margin: 8px 0;
+    }
+
+    .actions {
+        margin-left: 0;
+        margin-top: 5px;
+        gap: 15px;
+    }
+
+    .task img {
+        height: 24px;
+    }
+}
+
